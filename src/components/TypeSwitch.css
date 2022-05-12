@@ -1,0 +1,49 @@
+.treact-switch-checkbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.treact-switch-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 4vh;
+  height: 1vh;
+  background: grey;
+  border-radius: 100px;
+  position: relative;
+  transition: background-color 1s;
+}
+
+.treact-switch-label .treact-switch-button {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -1px;
+  width: 20px;
+  height: 20px;
+  border-radius: 45px;
+  transition: 0.8s;
+  box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+}
+
+.treact-switch-button {
+  background: url("https://slackmojis.com/emojis/186-pokeball/download");
+  background-size: 100%;
+}
+
+.treact-switch-checkbox:checked + .treact-switch-label .treact-switch-button {
+  left: calc(100% - -1px);
+  transform: translateX(-100%);
+  transition: 1s;
+}
+
+.tswitchName {
+  padding-left: 10vh;
+  white-space: nowrap;
+  font-size: 23px;
+  font-weight: 500;
+  text-shadow: 2300p;
+}
